@@ -1,3 +1,3 @@
 class Student{
-	public String s_name ;
+	public int age ;
 }
