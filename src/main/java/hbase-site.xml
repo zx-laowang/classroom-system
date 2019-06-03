@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+        <property>
+                <name>hbase.rootdir</name>
+                <value>hdfs://192.168.247.31:9000/opt/hbase/hbase_db</value>
+        </property>
+         <property>
+                <name>hbase.cluster.distributed</name>
+                <value>true</value>
+        </property>
+        <property> 
+　　　          <name>hbase.zookeeper.quorum</name> <!-- list of  zookooper -->
+　　　          <value>192.168.247.31,192.168.247.32,192.168.247.33</value> 
+        </property>
+        <property>
+　　　          <name>hbase.zookeeper.property.dataDir</name> 
+　　　          <value>/opt/hbase/zookeeper</value>
+        </property>
+ 
+        <property>
+　　　          <name>hbase.client.write.buffer</name> 
+　　　          <value>20000000</value>
+        </property>
+
+        <property>
+　　　          <name>hbase.client.pause</name> 
+　　　          <value>1000</value>
+        </property>
+
+        <property>
+　　　          <name>hbase.client.retries.number</name> 
+　　　          <value>10</value>
+        </property>
+
+        <property>
+　　　          <name>hbase.client.scanner.caching</name> 
+　　　          <value>1</value>
+        </property>
+        <property>
+　　　          <name>hbase.client.keyvalue.maxsize</name>    
+　　　          <value>10000000</value>
+        </property>
+        <property>
+　　　          <name>hbase.client.rpc.timeout</name>
+　　　          <value>50000</value>
+        </property>
+
+        <property>
+　　　          <name>hbase.security.authentication</name>
+　　　          <value>simple</value>
+        </property>
+        <property>
+　　　          <name>hbase.session.timeout</name>
+　　　          <value>50000</value>
+        </property>
+        <property>
+　　　          <name>zookeeper.znode.parent</name>
+　　　          <value>/hbase</value>
+        </property>
+        <property>
+　　　          <name>zookeeper.znode.rootserver</name>
+　　　          <value>root-region-server</value>
+        </property>
+
+        <property>
+　　　          <name>hbase.zookeeper.property.clientPort</name>
+　　　          <value>2181</value>
+        </property>
+</configuration>
