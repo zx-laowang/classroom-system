@@ -1,3 +1,3 @@
 class Student{
-	private String s_name ;
+	public String s_name ;
 }
